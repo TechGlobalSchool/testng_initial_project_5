@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/techglobal/IdeaProjects/testng_initial_project_5/src/test/java/scripts">
+        <classes>
+            <class name="scripts.TechGlobalForgotPasswordTest">
+                <methods>
+                    <include name="validateForgotPasswordForm"/>
+                    <include name="validateSuccessfulEmailSubmision"/>
+                </methods>
+            </class>
+            <class name="scripts.TechGlobalLoginFormTest">
+                <methods>
+                    <include name="validateLoginFormCard"/>
+                    <include name="validateLoginFormWithValidCredentials"/>
+                    <include name="validateLoginLogout"/>
+                    <include name="validateLoginFormWithWrongUsername"/>
+                    <include name="validateLoginFormWithWrongPassword"/>
+                    <include name="validateLoginFormWithInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

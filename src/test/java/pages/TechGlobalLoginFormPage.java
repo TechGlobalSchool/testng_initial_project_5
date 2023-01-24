@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.ConfigProperties;
 
 public class TechGlobalLoginFormPage extends TechGlobalBasePage {
     public TechGlobalLoginFormPage() {
@@ -28,4 +29,23 @@ public class TechGlobalLoginFormPage extends TechGlobalBasePage {
 
     @FindBy(id = "forgot-password")
     public WebElement forgotPasswordLink;
+
+    @FindBy(id = "success_lgn")
+    public WebElement successfulMessage;
+
+    @FindBy(id = "logout")
+    public WebElement logoutButton;
+
+    @FindBy(id = "error_message")
+    public WebElement errorMessage;
+
+    public void login(String username, String password) {
+        usernameInputField.sendKeys(username);
+        passwordInputField.sendKeys(password);
+        loginButton.click();
+    }
+
+    public void logout() {
+        logoutButton.click();
+    }
 }

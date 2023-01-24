@@ -1,0 +1,10 @@
+pages/TechGlobalForgotPasswordPage.class
+utilities/Driver.class
+scripts/TechGlobalLoginFormTest.class
+pages/TechGlobalFrontendTestingHomePage.class
+pages/TechGlobalLoginFormPage.class
+pages/TechGlobalBasePage.class
+utilities/Waiter.class
+scripts/TechGlobalBase.class
+scripts/TechGlobalForgotPasswordTest.class
+utilities/ConfigProperties.class
